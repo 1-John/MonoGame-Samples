@@ -31,7 +31,7 @@ namespace ParticleSample
 			UIApplication.Main(args, null, "AppDelegate");
 		}
 	}	
-#elif MONOMAC
+#elif __MACOS__
 	static class Program
 	{
 		/// <summary>

@@ -1,4 +1,4 @@
-#if MONOMAC
+#if __MACOS__
 using MonoMac.AppKit;
 using MonoMac.Foundation;
 #elif IPHONE
@@ -9,7 +9,7 @@ using MonoTouch.UIKit;
 namespace RenderTarget2DSample
 {
 	#region Entry Point
-#if MONOMAC
+#if __MACOS__
 	static class Program
 	{
 		/// <summary>

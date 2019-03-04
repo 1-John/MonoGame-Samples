@@ -7,7 +7,7 @@
 //-----------------------------------------------------------------------------
 #endregion
 
-#if MONOMAC
+#if __MACOS__
 using MonoMac.AppKit;
 using MonoMac.Foundation;
 #endif
@@ -17,7 +17,7 @@ using System;
 
 namespace XnaGraphicsDemo
 {
-#if MONOMAC
+#if __MACOS__
 	class Program
 	{
 		static void Main (string[] args)

@@ -1,4 +1,4 @@
-#if MONOMAC
+#if __MACOS__
 using MonoMac.AppKit;
 using MonoMac.Foundation;
 #elif IPHONE
@@ -8,7 +8,7 @@ using MonoTouch.UIKit;
 
 namespace Microsoft.Xna.Samples.BouncingBox
 {
-#if MONOMAC
+#if __MACOS__
 	class Program
 	{
 		static void Main (string[] args)

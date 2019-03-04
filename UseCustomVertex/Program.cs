@@ -26,7 +26,7 @@ namespace UseCustomVertexWindows
         }
     }
 #endif
-#if MONOMAC
+#if __MACOS__
 
 	static class Program
 	{	

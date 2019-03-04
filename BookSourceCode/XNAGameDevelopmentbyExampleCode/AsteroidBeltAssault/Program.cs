@@ -1,6 +1,6 @@
 using System;
 
-#if MONOMAC
+#if __MACOS__
 using MonoMac.Foundation;
 using MonoMac.AppKit;
 using MonoMac.ObjCRuntime;
@@ -22,7 +22,7 @@ namespace Asteroid_Belt_Assault
             }
         }
     }
-#elif MONOMAC
+#elif __MACOS__
 	static class Program
 	{
 		/// <summary>

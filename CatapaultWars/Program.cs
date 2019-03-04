@@ -33,7 +33,7 @@ namespace CatapultGame
             }
         }
     }
-#elif MONOMAC
+#elif __MACOS__
 
 
 	static class Program

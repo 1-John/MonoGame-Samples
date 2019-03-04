@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-#if MONOMAC
+#if __MACOS__
 using MonoMac.Foundation;
 using MonoMac.AppKit;
 using MonoMac.ObjCRuntime;
@@ -15,7 +15,7 @@ using MonoMac.ObjCRuntime;
 
 namespace GooCursor
 {
-#if MONOMAC
+#if __MACOS__
 	static class Program
 	{
 		/// <summary>

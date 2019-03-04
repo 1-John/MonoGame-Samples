@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 
 
-#if MONOMAC
+#if __MACOS__
 using MonoMac.AppKit;
 using MonoMac.Foundation;
 #endif
 
 namespace Tetris
 {
-#if MONOMAC
+#if __MACOS__
 	static class Program
 	{
 		/// <summary>

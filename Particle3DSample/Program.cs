@@ -1,4 +1,4 @@
-#if MONOMAC
+#if __MACOS__
 using MonoMac.AppKit;
 using MonoMac.Foundation;
 #endif
@@ -12,7 +12,7 @@ namespace Particle3DSample
 		/// </summary>
 		static void Main (string[] args)
 		{
-#if MONOMAC
+#if __MACOS__
 			NSApplication.Init ();
 
 			using (var p = new NSAutoreleasePool ()) {
@@ -27,7 +27,7 @@ namespace Particle3DSample
 
 		}
 	}
-#if MONOMAC
+#if __MACOS__
 	class AppDelegate : NSApplicationDelegate
 	{
         Particle3DSampleGame game;

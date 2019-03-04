@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-#if MONOMAC
+#if __MACOS__
 using MonoMac.AppKit;
 using MonoMac.Foundation;
 #elif IPHONE
@@ -12,7 +12,7 @@ using MonoTouch.UIKit;
 
 namespace Microsoft.Xna.Samples.Draw2D
 {
-#if MONOMAC
+#if __MACOS__
 	class Program
 	{
 		static void Main (string[] args)

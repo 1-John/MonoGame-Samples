@@ -1,6 +1,6 @@
 #region Using Statements
 using System;
-#if MONOMAC
+#if __MACOS__
 using MonoMac.AppKit;
 using MonoMac.Foundation;
 #elif IPHONE
@@ -8,7 +8,7 @@ using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using Microsoft.Xna;
 using Microsoft.Xna.Framework.Media;
-#elif MONOMAC
+#elif __MACOS__
 
 #endif
 #endregion
@@ -16,7 +16,7 @@ using Microsoft.Xna.Framework.Media;
 namespace GameStateManagement
 {
     #region Entry Point
-#if MONOMAC
+#if __MACOS__
 	class Program
 	{
 		static void Main (string[] args)
@@ -66,7 +66,7 @@ namespace GameStateManagement
             UIApplication.Main(args, null, "AppDelegate");
         }
     }    
-#elif MONOMAC
+#elif __MACOS__
 	static class Program
 	{	
 		/// <summary>

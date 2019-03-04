@@ -10,7 +10,7 @@
 #region Using Statements
 using System;
 
-#if MONOMAC
+#if __MACOS__
 using MonoMac.Foundation;
 using MonoMac.AppKit;
 using MonoMac.ObjCRuntime;
@@ -23,7 +23,7 @@ using MonoTouch.UIKit;
 
 namespace RectangleCollision
 {
-#if MONOMAC
+#if __MACOS__
 	static class Program
 	{
 		/// <summary>

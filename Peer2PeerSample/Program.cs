@@ -15,7 +15,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Net;
 
-#if MONOMAC
+#if __MACOS__
 using MonoMac.Foundation;
 using MonoMac.AppKit;
 using MonoMac.ObjCRuntime;
@@ -31,7 +31,7 @@ namespace PeerToPeer
 {
 	
 	#region Entry Point
-#if MONOMAC
+#if __MACOS__
 	static class Program
 	{
 		/// <summary>

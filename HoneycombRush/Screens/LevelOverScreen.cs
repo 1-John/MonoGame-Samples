@@ -252,7 +252,7 @@ namespace HoneycombRush
             // If not already loading
             else if (!isLoading)
             {
-#if MONOMAC			
+#if __MACOS__			
 		// Start loading the resources on main thread
 		// If not then all sorts of errors happen for 
 		// AutoReleasPools and OpenGL does not handle 
